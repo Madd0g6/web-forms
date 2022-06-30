@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-forms</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="first block">
+       <section class="create_an_account">
+        <form class="account" name="gender">
+            <h2>Create an Account</h2>
+            <div>
+                <label for="first_name">First Name</label><br>
+                <input type="text" name="name" id="first_name">
+            </div>
+            <div>
+                <label for="last_name">Last Name</label><br>
+                <input type="text" name="name" id="last_name">
+            </div>
+            <div>
+                <label for="mail">E-mail</label><br>
+                <input type="mail" name="E-mail" id="mail"><br>
+                <p>We'll never share your email with anyone else.</p>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="choose_male" value="male" checked>
+                <label for="choose_male">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="choose_female" value="female">
+                <label for="choose_female">Female</label>
+            </div>
+            <div>
+                <label for=""></label>
+            </div>
+            <div>
+                <label for="Choose_a_country">Country</label><br>
+                <select name="Country" id="Choose_a_country" required>
+                    <option value="USA">USA</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Germany">Germany</option>
+                </select>
+            </div>
+            <div>
+                <label for="a_city">City</label><br>
+                <input type="text" name="city" id="a_city">
+            </div>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+            <div>
+                <p>By clicking the 'Sign Up' button, you confirm that you accept our and.<br>
+                    <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
+                </p>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    Have an account?
+                    <span><a href="">Log In</a></span>
+                </p>
+            </div>
+        </form>
+       </section>
+    </div>
+
+
+    <div>
+        <section class="create_to_profile">
+            <form class="Profile" name="">
+               <h2>Profile</h2>
+               <div>
+                    <img src="/image/man.png" alt="man">
+                </div>
+                <div>
+                    <input type="file" name="file" id="file">
+                    <label for="file"></label>
+                    <span><a href="/icons/Trash.png"></a></span>
+                </div>
+                <div>
+                    <input type="reset" value="reset" id="reset">
+                    <label for="reset"></label>
+                    <span><a href="/icons/🔹 Icon Color.png"></a></span>
+                </div>
+                <div>
+                    <p>Up to 1 MB (300x300 px)</p>
+                </div>
+                <div>
+                    <label for="for name">Name</label><br>
+                    <input type="text" name="name" id="for name">
+                </div>
+                <div>
+                    <label for="mail2">E-mail</label><br>
+                    <input type="text" name=e-mail" id="mail2">
+                </div>
+                <div>
+                    <label for="_country">Country</label><br>
+                    <select name="Country" id="_country" required>
+                        <option value="usa">USA</option>
+                        <option value="germany">Germany</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="_city">City</label><br>
+                    <input type="text" name="city" id="_city">
+                </div>
+                <div>
+                    <label for="code">Zip Code</label><br>
+                    <input type="text" name="code" id="code">
+                </div>
+                <div>
+                    <label for="for_phone">Phone Number</label><br>
+                    <input type="text" name="phone" id="for_phone">
+                </div>
+                <div>
+                    <button type="submit">Update</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
