@@ -1,17 +1,301 @@
-.inputfile {
-    visibility: hidden etc. wont work
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-  }
-  .inputfile:focus + label {
-    keyboard navigation
-    outline: 1px dotted #000;
-    outline: -webkit-focus-ring-color auto 5px;
-  }
-  .inputfile + label * {
-    pointer-events: none;
-  }
+* {
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+input, button {
+    cursor: pointer;
+}
+
+/* a {
+    text-decoration: none;
+} */
+
+p {
+    margin: 0;
+}
+
+.text_size {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+.form {
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1440px;
+    min-height: 700px;
+    
+}
+
+.container {
+    background: #FFFFFF;
+    width: 570px;
+    height: 590px;
+}
+
+.create_an_account {
+    padding: 55px 30px 55px 135px;
+}
+
+.create_to_profile {
+    padding: 55px 135px 55px 0;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1C1C1C;
+    padding: 35px 0 20px 36px;
+    margin: 0;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.first_name {
+    padding: 0 12px 20px 34px;
+
+}
+
+.input_first_name {
+    width: 245px;
+    height: 38px;
+    border: 1px solid #007BFF;
+    border-radius: 6px;
+}
+
+
+.label_first_name {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.last_name {
+    padding: 0 34px 20px 0;
+}
+
+.input_last_name {
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.label_last_name {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.email{
+    display: inline-block;
+}
+
+.input_email {
+    width: 500px;
+    height: 38px;
+    margin: 7px 34px 7px 36px;
+}
+
+.label_email {
+    display: inline-block;
+    margin-left: 36px
+}
+
+.text_email {
+    display: inline-block;
+    margin: 0 34px 20px 36px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+
+.gender {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.male {
+    margin-left: 36px;
+}
+
+.label_male {
+    margin-left: 8px;
+}
+
+.input_male {
+   width: 20px;
+   height: 20px;
+}
+
+.female {
+    margin-left: 21px;
+}
+
+.label_female {
+    margin-left: 8px;
+}
+
+.input_female {
+    width: 20px;
+   height: 20px;
+}
+
+.location {
+    display: flex;
+    justify-content: start;
+}
+
+.country {
+    margin-left: 36px;
+    margin-top: 20px;
+}
+
+.label_country {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.select_country {
+    width: 245px;
+    height: 38px;
+}
+
+.city {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.label_city {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.input_city {
+    width: 245px;
+    height: 38px;
+}
+
+.select_country {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+.account_btn {
+    width: 500px;
+    height: 38px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    margin: 20px 34px 22px 36px;
+    padding: 0;
+}   
+
+.links {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.link {
+    font-family: 'Inter';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #007BFF;
+}
+
+.links_text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: #969696;
+}
+
+.line {
+    border: 1px solid #E4E4E4;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.log_in {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0 16px 0;
+}
+
+.log {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.log_text {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.hero{
+    margin-left: 35px;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+.wrapper_box {
+   /*  position: relative; */
+}
+
+input[type="file"] {
+    display: none;
+} 
+
+.label_file {
+  /*   position: absolute; */
+    top: 98px;
+    left: 135px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 138px;
+    height: 30px;
+}
