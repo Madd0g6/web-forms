@@ -79,68 +79,62 @@
             </div>
            </section>
 
-
             <section class="create_to_profile">
                 <div class="container">
                     <form class="Profile" name="">
                         <h2 class="title_second">Profile</h2>
-                        <img class="hero" src="/image/man.png" alt="man">
-
                          <div class="wrapper">
-                            <div class="wrapper_box">
-                                <div class="file_box">
-                                    <input type="file" name="file" id="file">
-                                    <label for="file" class="label_file"></label>
-                                </div>
-                                <div>
-                                    <img src="/icons/Icon_сolor.png" alt="camera">
-                                </div>
+                            <img class="hero" src="/image/man.png" alt="man">
+                            <div class="file_box">
+                                <input type="file" name="file" id="file">
+                                <label for="file" class="label_file"></label>
+                                <p class="file_text">Up to 1 MB (300x300 px)</p>
+                            </div>
+                            <div class="reset_box">
+                                <input type="reset" value="reset" id="reset">
+                                <label for="reset" class="label_reset"></label>
+                            </div>
+                        </div>
+
+                         <div class="profile_name">
+                            <div class="second_name">
+                                <label for="second_name" class="label_second_name text_size">Name</label><br>
+                                <input type="text" name="name" class="input_second_name" id="second_name">
+                            </div>
+                            <div class="second_email">
+                                <label for="second_email" class="label_second_email text_size">E-mail</label><br>
+                                <input type="text" name=e-mail" class="input_second_email" id="second_email">
+                            </div>
+                         </div>
+
+                         <div class="second_location">
+                            <div class="second_country">
+                                <label for="_country" class="label_second_country text_size">Country</label><br>
+                                <select name="Country" id="_country" class="select_second_country" required>
+                                    <option value=""selected disabled hidden class="select_second_country">Select</option>
+                                    <option value="usa">USA</option>
+                                    <option value="germany">Germany</option>
+                                </select>
+                            </div>
+                            <div class="second_city">
+                                <label for="_city" class="label_second_city text_size">City</label><br>
+                                <input type="text" name="city" class="input_second_city" id="_city">
+                            </div>
+                         </div>
+
+                         <div class="code_box">
+                            <div class="zip_code">
+                                <label for="code" class="label_zip_code text_size">Zip Code</label><br>
+                                <input type="text" class="input_zip_code" name="code" id="code">
                             </div>
                             <div>
-                                <input type="reset" value="reset" id="reset">
-                                <label for="reset"></label>
-                                <div>
-                                    <img src="/icons/Trash.png" alt="reset">
-                                </div>
+                                <label for="phone" class="label_phone text_size">Phone Number</label><br>
+                                <input type="text" class="input_phone" name="phone" id="phone">
+                            </div>
                          </div>
-                        </div>
-                        <div>
-                            <p>Up to 1 MB (300x300 px)</p>
-                        </div>
-
-                         
-
-
 
                          <div>
-                             <label for="for name">Name</label><br>
-                             <input type="text" name="name" id="for name">
-                         </div>
-                         <div>
-                             <label for="mail2">E-mail</label><br>
-                             <input type="text" name=e-mail" id="mail2">
-                         </div>
-                         <div>
-                             <label for="_country">Country</label><br>
-                             <select name="Country" id="_country" required>
-                                 <option value="usa">USA</option>
-                                 <option value="germany">Germany</option>
-                             </select>
-                         </div>
-                         <div>
-                             <label for="_city">City</label><br>
-                             <input type="text" name="city" id="_city">
-                         </div>
-                         <div>
-                             <label for="code">Zip Code</label><br>
-                             <input type="text" name="code" id="code">
-                         </div>
-                         <div>
-                             <label for="for_phone">Phone Number</label><br>
-                             <input type="text" name="phone" id="for_phone">
-                         </div>
-                         <div>
-                             <button type="submit">Update</button>
+                             <button type="submit" class="profile_btn">Update</button>
                          </div>
                      </form>
                 </div>

@@ -6,11 +6,9 @@
 
 input, button {
     cursor: pointer;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
 }
-
-/* a {
-    text-decoration: none;
-} */
 
 p {
     margin: 0;
@@ -59,7 +57,6 @@ h2 {
 
 .name {
     display: flex;
-    justify-content: space-between;
 }
 
 
@@ -88,8 +85,6 @@ h2 {
 .input_last_name {
     width: 245px;
     height: 38px;
-    border: 1px solid #E4E4E4;
-    border-radius: 6px;
 }
 
 .label_last_name {
@@ -139,6 +134,7 @@ h2 {
 .input_male {
    width: 20px;
    height: 20px;
+  
 }
 
 .female {
@@ -172,6 +168,8 @@ h2 {
 .select_country {
     width: 245px;
     height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
 }
 
 .city {
@@ -187,6 +185,8 @@ h2 {
 .input_city {
     width: 245px;
     height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
 }
 
 .select_country {
@@ -197,6 +197,8 @@ h2 {
     line-height: 22px;
     letter-spacing: -0.2px;
     color: #545454;
+    mix-blend-mode: normal;
+    opacity: 0.4;
 }
 
 .account_btn {
@@ -273,15 +275,21 @@ h2 {
 }
 
 .hero{
-    margin-left: 35px;
+   margin: 0 20px 0 35px;
 }
 
 .wrapper {
-    display: inline-block;
+   display: flex;
+   justify-content: start;
 }
 
-.wrapper_box {
-   /*  position: relative; */
+.file_text {
+    margin-top: 9px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.1px;
+    color: #969696;
 }
 
 input[type="file"] {
@@ -289,13 +297,162 @@ input[type="file"] {
 } 
 
 .label_file {
-  /*   position: absolute; */
-    top: 98px;
-    left: 135px;
     display: inline-block;
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
     width: 138px;
     height: 30px;
+    background: url(/icons/Icon_сolor.png) no-repeat;
+    background-position: 90%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    display: none;
+} 
+
+.label_reset {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    background: url(/icons/Trash.png) no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.profile_name {
+    display: flex;
+}
+
+.second_name {
+    margin: 20px 10px 20px 35px;
+}
+
+.input_second_name {
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+
+}
+
+.label_second_name {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.second_email {
+    margin: 20px 0 20px 0;
+}
+
+.input_second_email {
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.label_second_email {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.second_location {
+    display: flex;
+}
+
+.second_country{
+    margin: 0 10px 20px 35px;
+}
+
+.label_second_country{
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.select_second_country {
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+
+.second_city {
+    margin: 0 0 20px 0;
+}
+
+.input_second_city {
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.label_second_city {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.code_box {
+    display: flex;
+}
+
+.zip_code {
+    margin: 0 10px 0 35px;
+}
+
+.input_zip_code{
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.label_zip_code {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.input_phone {
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.label_phone {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.profile_btn {
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 150px;
+    height: 38px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+    margin: 20px 0 0 35px;
+    padding: 0;
+    background: #007BFF;
 }
