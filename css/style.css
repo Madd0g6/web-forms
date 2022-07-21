@@ -303,7 +303,7 @@ input[type="file"] {
     border-radius: 6px;
     width: 138px;
     height: 30px;
-    background: url(/icons/Icon_сolor.png) no-repeat;
+    background: url(../icons/Icon_сolor.png) no-repeat;
     background-position: 90%;
     margin-top: 10px;
     cursor: pointer;
@@ -322,7 +322,7 @@ input[type="reset"] {
     border-radius: 6px;
     width: 30px;
     height: 30px;
-    background: url(/icons/Trash.png) no-repeat;
+    background: url(../icons/Trash.png) no-repeat;
     background-position: center;
     cursor: pointer;
 }
